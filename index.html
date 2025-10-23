@@ -1,305 +1,1026 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chetanya Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chetanya Sharma - Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300&display=swap');
-        </style>
-</head>
-<body>
-    <nav id="desktop-nav">
-    <div class="logo">Chetanya's Portfolio</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
-    </div>
-</nav>
-<nav id="hamburger">
-    <div class="logo">Chetanya Sharma</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="menu()">
-            <span></span>
-            <span></span>
-            <span></span>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
 
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="menu()">About</a></li>
-            <li><a href="#experience" onclick="menu()">Experience</a></li>
-            <li><a href="#projects" onclick="menu()">Projects</a></li>
-            <li><a href="#contacts" onclick="menu()">Contacts</a></li>
-        </div>
-    </div>
-</nav>
-<section id="profile">
-    <div class="section__pic-container">
-        <img src="./assets//profile-pic.png" alt="Chetanya Profile Picture"/>
-    </div>
-    <div class="section__text">
-        <p class="section__text_p1">
-            Hi, I'm
-        </p>
-        <h1 class="title">
-            Chetanya Sharma
-        </h1>
-        <p class="section__text_p2">
-            Frontend Developer
-        </p>
-        <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"><p></p>Download Resume</button>
-            <button class="btn btn-color-2" onclick="location.href='./#contacts'">Contact Info</button>
-        </div>
-        <div id="socials">
-            <img src="./assets/linkedin.png" alt="Linked in" class="icon" onclick="location.href='http://linkedin.com/in/chetanya-sharma-513711172/'"/>
-            <img src="./assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/chetanya850'"/>
-        </div>
-    </div>
-</section>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
+      :root {
+        --primary-color: #0d0d0d;
+        --secondary-color: #6b7280;
+        --text-color: #1f2937;
+        --text-light: #6b7280;
+        --bg-color: #ffffff;
+        --bg-light: #f9fafb;
+        --border-color: #e5e7eb;
+        --accent-color: #3b82f6;
+      }
 
-<!-- about section -->
+      html {
+        scroll-behavior: smooth;
+      }
 
-<section id="about">
-    <p class='section__text_p1'>Know More</p>
-    <h1 class='title'>About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.jpg" alt="profile pic" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>Fresher <br>Front End Dev</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education" class="icon"/>
-                        <h3>Education</h3>
-                        <p>B.C.A <br>M.C.A</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
+        background-color: var(--bg-color);
+      }
 
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-</section>
-<section id="experience">
-    <p class="section__text_p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>ReactJS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Mongo DB</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Node JS</h3>
-                <p>Beginner</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
+      /* Navigation */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 1rem 0;
+      }
 
-  <section id="projects">
-    <p class="section__text_p1">Browse My </p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container-2 color-container">
-          <div class="article-container">
-            <img
-              src="./assets/gitproject.png"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Go News</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/chetanya850/goNews'"
-            >
-              Github
-            </button>
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-          </div>
-        </div>
-        <div class="details-container-2 color-container">
-          <div class="article-container">
-            <img
-              src="./assets/gitproject.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Socialite</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+      }
 
-          </div>
-        </div>
-        <div class="details-container-2 color-container">
-          <div class="article-container">
-            <img
-              src="./assets/gitproject.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Word Magic</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/chetanya850/Word-Magic'"
-            >
-              Github
-            </button>
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
 
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section>
-  <section id="contact">
-    <p class="section__text_p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:examplemail@gmail.com">Chetanya850@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="http://linkedin.com/in/chetanya-sharma-513711172/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary-color);
+      }
+
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 4px;
+      }
+
+      .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: var(--text-color);
+        transition: 0.3s;
+      }
+
+      .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+      }
+
+      .mobile-menu.active {
+        display: block;
+      }
+
+      .mobile-menu ul {
+        list-style: none;
+        padding: 0 2rem;
+      }
+
+      .mobile-menu li {
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .mobile-menu a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+      }
+
+      /* Hero Section */
+      #hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 2rem 4rem;
+        background: #ffffff;
+      }
+
+      .hero-content {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .hero-text h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+
+      .hero-text .subtitle {
+        font-size: 1.5rem;
+        color: #3b82f6;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+      }
+
+      .hero-text p {
+        color: var(--text-light);
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 0.875rem 2rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-primary {
+        background: #0d0d0d;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: #1a1a1a;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(13, 13, 13, 0.3);
+      }
+
+      .btn-secondary {
+        background: white;
+        color: #0d0d0d;
+        border: 2px solid #0d0d0d;
+      }
+
+      .btn-secondary:hover {
+        background: #0d0d0d;
+        color: white;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .social-links a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: 0.3s;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .social-links a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .hero-image {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 50%;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        aspect-ratio: 1;
+      }
+
+      /* Current Role Section */
+      #current-role {
+        padding: 5rem 2rem;
+        background: var(--bg-light);
+      }
+
+      .current-role-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: 3rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .current-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .current-role-container h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      .company-name {
+        color: var(--primary-color);
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+
+      .role-description {
+        color: var(--text-light);
+        line-height: 1.8;
+        margin-bottom: 2rem;
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .tech-tag {
+        background: #eff6ff;
+        color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      /* Section Styles */
+      section {
+        padding: 5rem 2rem;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        color: var(--text-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .section-title p {
+        color: var(--text-light);
+        font-size: 1.1rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* About Section */
+      #about {
+        background: var(--bg-color);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .about-image img {
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        aspect-ratio: 1;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .stat-card {
+        background: var(--bg-light);
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      .stat-card h3 {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-card p {
+        color: var(--text-light);
+      }
+
+      /* Skills Section */
+      #skills {
+        background: var(--bg-light);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .skill-category {
+        background: white;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .skill-category h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+      }
+
+      .skill-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .skill-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .skill-item::before {
+        content: '✓';
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .skill-name {
+        font-weight: 500;
+        color: var(--text-color);
+      }
+
+      .skill-level {
+        color: var(--text-light);
+        font-size: 0.9rem;
+      }
+
+      /* Projects Section */
+      #projects {
+        background: var(--bg-color);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      .project-image {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: white;
+      }
+
+      .project-content {
+        padding: 1.5rem;
+      }
+
+      .project-content h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+
+      .project-link {
+        display: inline-block;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      /* Contact Section */
+      #contact {
+        background: var(--bg-light);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .contact-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 1.5rem;
+      }
+
+      .contact-card h3 {
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      .contact-card a {
+        color: var(--primary-color);
+        text-decoration: none;
+        word-break: break-word;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--text-color);
+        color: white;
+        padding: 3rem 2rem 2rem;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: var(--accent-color);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 968px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hamburger {
+          display: flex;
+        }
+
+        .hero-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .hero-text h1 {
+          font-size: 2.5rem;
+        }
+
+        .btn-group {
+          justify-content: center;
+        }
+
+        .social-links {
+          justify-content: center;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .skill-list {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .hero-text h1 {
+          font-size: 2rem;
+        }
+
+        .hero-text .subtitle {
+          font-size: 1.2rem;
+        }
+
+        .section-title h2 {
+          font-size: 2rem;
+        }
+
+        .current-role-container {
+          padding: 2rem 1.5rem;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .btn-group {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
     <nav>
-      <div class="nav-links-container">
+      <div class="nav-container">
+        <div class="logo">Portfolio</div>
         <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#current-role">Current Role</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
-    <p>Copyright &#169; 2023 Chetanya Sharma. All Rights Reserved.</p>
-  </footer>
-<script src="script.js"></script>
-</body>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#current-role" onclick="toggleMenu()">Current Role</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm Chetanya Sharma</h1>
+          <p class="subtitle">Full Stack Web Developer</p>
+          <p>
+            Building modern, responsive web applications with cutting-edge
+            technologies. Currently working at TDC Consultancy, transforming
+            ideas into digital reality.
+          </p>
+          <div class="btn-group">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+          <div class="social-links">
+            <a
+              href="http://linkedin.com/in/chetanya-sharma-513711172/"
+              target="_blank"
+              >in</a
+            >
+            <a href="https://github.com/chetanya850" target="_blank">gh</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./assets/image-port.jpeg"
+            alt="Chetanya Sharma"
+            onerror="this.style.display='none'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Role Section -->
+    <section id="current-role">
+      <div class="container">
+        <div class="current-role-container">
+          <span class="current-badge">🚀 Currently Working</span>
+          <h2>Full Stack Web Developer</h2>
+          <p class="company-name">TDC Consultancy Pvt Ltd</p>
+          <p class="role-description">
+            Developing and maintaining full-stack web applications,
+            collaborating with cross-functional teams to deliver high-quality
+            solutions. Leveraging AI-assisted development tools and advanced
+            prompt engineering to accelerate development cycles and deliver
+            efficient, scalable solutions.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Apollo Graphql</span>
+            <span class="tech-tag">Type ORM</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>Get to know more about my background</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-image">
+            <img
+              src="./assets/about-pic.jpg"
+              alt="About Chetanya"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="about-content">
+            <p
+              style="
+                color: var(--text-light);
+                margin-bottom: 2rem;
+                line-height: 1.8;
+              "
+            >
+              I'm a passionate full stack web developer with a strong foundation
+              in both frontend and backend technologies. With a BCA and MCA
+              degree, I combine academic knowledge with practical experience to
+              build innovative web solutions.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <h3>Education</h3>
+                <p>B.C.A & M.C.A</p>
+              </div>
+              <div class="stat-card">
+                <h3>Current Role</h3>
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>Technical Skills</h2>
+          <p>Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name">HTML</div>
+                  <div class="skill-level">Experienced</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name">CSS</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name">JavaScript</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name">React.js</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name">Node.js</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name">Express.js</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name">Type ORM</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div>
+                  <div class="skill-name"></div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-category"
+            style="
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              color: white;
+            "
+          >
+            <h3 style="color: white">AI-Assisted Development</h3>
+            <div class="skill-list">
+              <div class="skill-item" style="color: rgba(255, 255, 255, 0.95)">
+                <div>
+                  <div
+                    class="skill-name"
+                    style="color: white; font-weight: 600"
+                  >
+                    ChatGPT
+                  </div>
+                  <div
+                    class="skill-level"
+                    style="color: rgba(255, 255, 255, 0.8)"
+                  >
+                    Advanced
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item" style="color: rgba(255, 255, 255, 0.95)">
+                <div>
+                  <div
+                    class="skill-name"
+                    style="color: white; font-weight: 600"
+                  >
+                    Claude AI
+                  </div>
+                  <div
+                    class="skill-level"
+                    style="color: rgba(255, 255, 255, 0.8)"
+                  >
+                    Advanced
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item" style="color: rgba(255, 255, 255, 0.95)">
+                <div>
+                  <div
+                    class="skill-name"
+                    style="color: white; font-weight: 600"
+                  >
+                    Cursor IDE
+                  </div>
+                  <div
+                    class="skill-level"
+                    style="color: rgba(255, 255, 255, 0.8)"
+                  >
+                    Proficient
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item" style="color: rgba(255, 255, 255, 0.95)">
+                <div>
+                  <div
+                    class="skill-name"
+                    style="color: white; font-weight: 600"
+                  >
+                    Prompt Engineering
+                  </div>
+                  <div
+                    class="skill-level"
+                    style="color: rgba(255, 255, 255, 0.8)"
+                  >
+                    Expert
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Projects</h2>
+          <p>Check out my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">📰</div>
+            <div class="project-content">
+              <h3>Go News</h3>
+              <p>
+                A modern news application built with React, featuring real-time
+                updates and responsive design.
+              </p>
+              <a
+                href="https://github.com/chetanya850/goNews"
+                target="_blank"
+                class="project-link"
+                >View on GitHub →</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">💬</div>
+            <div class="project-content">
+              <h3>Socialite</h3>
+              <p>
+                A social media platform enabling users to connect, share, and
+                interact with content.
+              </p>
+              <a href="https://github.com/" target="_blank" class="project-link"
+                >View on GitHub →</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">✨</div>
+            <div class="project-content">
+              <h3>Word Magic</h3>
+              <p>
+                An innovative text manipulation tool with multiple features for
+                content creators.
+              </p>
+              <a
+                href="https://github.com/chetanya850/Word-Magic"
+                target="_blank"
+                class="project-link"
+                >View on GitHub →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <p>Let's work together</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">✉</div>
+            <h3>Email</h3>
+            <a href="mailto:Chetanya850@gmail.com">Chetanya850@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">in</div>
+            <h3>LinkedIn</h3>
+            <a
+              href="http://linkedin.com/in/chetanya-sharma-513711172/"
+              target="_blank"
+              >Connect with me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#current-role">Current Role</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p>Copyright © 2025 Chetanya Sharma. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('mobileMenu')
+        menu.classList.toggle('active')
+      }
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function (event) {
+        const menu = document.getElementById('mobileMenu')
+        const hamburger = document.querySelector('.hamburger')
+
+        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+          menu.classList.remove('active')
+        }
+      })
+    </script>
+  </body>
 </html>
